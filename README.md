@@ -50,3 +50,103 @@ The primary challenge was understanding the dataset structure and selecting appr
 ## Next Steps
 
 The cleaned dataset will be used in Deliverable 2 for feature engineering, regression modeling, and performance evaluation.
+
+# MSCS_634_ProjectDeliverable_2
+**Project Deliverable:** 2 – Regression Modeling and Performance Evaluation
+
+---
+
+# Project Overview
+
+The purpose of this project is to build and evaluate regression models using the **Online Shoppers Purchasing Intention Dataset**. The project focuses on predicting the *Administrative_Duration* variable based on other website session features.
+
+Different regression techniques were implemented and compared to understand how feature engineering and model selection affect prediction performance. Cross-validation was also used to evaluate how well the models generalize to unseen data.
+
+---
+
+# Dataset
+
+**Dataset:** Online Shoppers Purchasing Intention Dataset
+
+The dataset contains information about visitor behavior during online shopping sessions, including:
+
+- Administrative pages visited
+- Informational pages visited
+- Product-related pages visited
+- Time spent on each page type
+- Bounce rates
+- Exit rates
+- Page values
+- Visitor type
+- Weekend visits
+- Revenue indicator
+
+The dataset contains more than 12,000 records and multiple numerical and categorical attributes, making it suitable for regression and predictive modeling.
+
+---
+
+# Feature Engineering
+
+Several preprocessing and feature engineering steps were performed before model training:
+
+- Removed missing values (if any)
+- Converted categorical variables into numerical values using one-hot encoding
+- Selected **Administrative_Duration** as the target variable
+- Used the remaining attributes as predictor variables
+- Split the dataset into training and testing sets
+- Standardized numerical features using StandardScaler
+
+These steps prepared the dataset for regression analysis and improved model performance.
+
+---
+
+# Model Evaluation
+
+The models were evaluated using:
+
+- R² Score
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+
+Five-fold Cross Validation was also performed to measure how well each model generalizes to unseen data.
+
+---
+
+# Visualizations
+
+The notebook includes several visualizations, including:
+
+- Actual vs Predicted values
+- Regression comparison plots
+- Model performance comparison
+- Cross-validation score comparison
+
+These figures help compare the prediction performance of each regression model.
+
+---
+
+# Key Findings
+
+- Linear Regression provided a strong baseline for prediction.
+- Cross-validation showed that the selected models generalized well to unseen data.
+- Regularization helped reduce the possibility of overfitting while maintaining stable prediction performance.
+
+---
+
+# Challenges Encountered
+
+Some challenges encountered during this project included:
+
+- Selecting an appropriate target variable for regression.
+- Handling categorical variables before model training.
+- Scaling numerical features for fair model comparison.
+- Comparing multiple evaluation metrics to determine the best-performing model.
+
+These challenges were addressed through proper preprocessing, feature engineering, and model evaluation techniques.
+
+---
+
+# Conclusion
+
+This project demonstrated the complete regression modeling process, including feature engineering, model development, evaluation, and comparison. The results show that regression techniques can effectively model relationships within the Online Shoppers Purchasing Intention dataset, while regularization methods help improve model stability and reduce overfitting.
