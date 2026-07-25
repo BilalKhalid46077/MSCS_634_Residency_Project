@@ -150,3 +150,73 @@ These challenges were addressed through proper preprocessing, feature engineerin
 # Conclusion
 
 This project demonstrated the complete regression modeling process, including feature engineering, model development, evaluation, and comparison. The results show that regression techniques can effectively model relationships within the Online Shoppers Purchasing Intention dataset, while regularization methods help improve model stability and reduce overfitting.
+
+---
+
+# MSCS_634_ProjectDeliverable_3
+
+**Project Deliverable:** 3 – Classification, Clustering, and Pattern Mining
+
+## Objective
+
+The purpose of this deliverable is to apply different data mining techniques to classify customer purchase intentions, identify customer groups through clustering, and discover product purchasing patterns using association rule mining.
+
+## Tasks Completed
+
+- Developed two classification models:
+  - Decision Tree
+  - K-Nearest Neighbors (KNN)
+
+- Performed hyperparameter tuning using GridSearchCV for the Decision Tree model.
+
+- Evaluated classification models using:
+  - Accuracy
+  - F1 Score
+  - Confusion Matrix
+  - ROC Curve
+
+- Applied K-Means clustering to identify customer groups.
+
+- Visualized clustering results using PCA.
+
+- Applied the Apriori algorithm to discover frequent itemsets.
+
+- Generated association rules using:
+  - Support
+  - Confidence
+  - Lift
+
+## Key Findings
+
+- The tuned Decision Tree produced better classification performance than the default model.
+- KNN also achieved strong prediction accuracy but required additional computation.
+- K-Means successfully grouped customers with similar browsing behavior.
+- Association rule mining identified combinations of customer behaviors that frequently occurred together.
+- The discovered patterns can help improve marketing strategies and customer recommendations.
+
+## Real-World Applications
+
+- Customer purchase prediction
+- Personalized marketing
+- Customer segmentation
+- Recommendation systems
+- Business intelligence
+- Decision support
+
+## Challenges Faced
+
+- Selecting suitable hyperparameters for the Decision Tree.
+- Preparing transactional data for association rule mining.
+- Choosing an appropriate number of clusters for K-Means.
+
+## Tools Used
+
+- Python
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- mlxtend
+
