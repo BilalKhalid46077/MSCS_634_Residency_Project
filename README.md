@@ -220,3 +220,25 @@ The purpose of this deliverable is to apply different data mining techniques to 
 - Scikit-learn
 - mlxtend
 
+
+# Practical Recommendations
+
+Based on the results of this project, the following recommendations are suggested:
+- Use the **Random Forest** model for predicting customer purchases because it achieved the best overall performance among the classification models.
+- Focus marketing campaigns and personalized offers on **returning visitors**, as they represent the largest group of website traffic but still have a relatively low purchase rate.
+- Schedule promotional campaigns during months such as **May**, where the association rule mining results indicated lower purchase confidence.
+- For predicting **PageValues**, consider using more advanced **non-linear regression models**, such as Random Forest Regression or Gradient Boosting, since Linear Regression showed limited predictive performance.
+
+# Ethical Considerations
+
+Ethical considerations were an important part of this project.
+- The dataset does not contain any personally identifiable information such as names, email addresses, or payment details. It only includes anonymous website browsing and session behavior.
+- The dataset is imbalanced because there are many more non-purchasing sessions than purchasing sessions. To avoid misleading conclusions, model performance was evaluated using the **F1 Score** and **Confusion Matrix** in addition to overall accuracy.
+- Features such as operating system, browser, and visitor region were not used to profile or unfairly discriminate against any group of users. In real-world applications, these models should continue to be monitored to ensure fairness and reduce potential bias.
+
+# Conclusion
+
+This project successfully applied the complete data mining process using the Online Shoppers Purchasing Intention dataset. The work included data cleaning, exploratory data analysis, feature engineering, regression modeling, classification, clustering, and association rule mining.
+The regression analysis showed that predicting **PageValues** is challenging using a simple linear model, suggesting that more advanced regression techniques could improve prediction accuracy. The classification stage produced strong results, with the **Random Forest** model achieving the best overall performance. Clustering identified meaningful groups of visitors with similar browsing behavior, while association rule mining discovered useful purchasing patterns, particularly involving returning visitors and seasonal shopping behavior.
+Overall, combining supervised learning, unsupervised learning, and association rule mining provided a comprehensive understanding of customer behavior and demonstrated how different data mining techniques can support better business decision-making.
+
